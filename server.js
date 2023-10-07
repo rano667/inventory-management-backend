@@ -2,7 +2,7 @@ const express = require('express');
 const connectDB = require('./connectDB');
 const cors = require('cors'); // Import the cors middleware
 const app = express();
-const port = 4000; // You can change the port number as needed
+const port = process.env.PORT || 4000; // You can change the port number as needed
 
 // Middleware to enable CORS
 app.use(cors({
